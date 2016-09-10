@@ -1,4 +1,5 @@
 #include <cmath>
+#include <stdexcept>
 
 
 #ifndef __STRING_
@@ -94,8 +95,8 @@ class String
 
 		// MANIPULATION
 		bool insert(int, String&);
-		int to_int() throw std::invalid_argument;
-		double to_double() throw std::invalid_argument;
+		int to_int();
+		double to_double();
 
 	private:
 		char *data;
